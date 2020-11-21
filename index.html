@@ -12,24 +12,120 @@
 </head>
 
 <body>
+    <!-- content container-->
     <div class="content">
+        <!-- header -->
         <div class="row bg-dark text-white text-xl-center">
             <div class="col header">
                 <h1>Weather Dashboard</h1>
             </div>
         </div>
         <div class="row ">
-            <div id="search-board" class="col-4 bg-light">
-                <h3>Search for a City</h3>
+            <!--section to store search elements-->
+            <div id="search-board" class="col-3 bg-light">
+                <h4>Search for a City</h3>
                 <input name="city-search" id="city-search" type="text" autofocus="true" class="form-input" />
-                <button type="submit" class="btn bg-primary">
+                <button type="submit" class="btn bg-primary border border-dark">
                     <span class="oi oi-magnifying-glass"></span>
-                </button> 
+                </button>
+                <div>
+                    <h5>Recent city Search</h4>
+                    <ul id="search-history-list">
+
+                    </ul>
+                </div> 
             </div>
-            <div id="weather-board" class="col-8">
+            <!--section to display weather elements-->
+            <div id="weather-board" class="col-9">
+                <div id="current-weather" class="col-9 h-50 border border-dark">
+                    <h4 id="city-date">City (and date)</h4>
+                    <p >Temperature:<span id="curent-temp">Test</span> &#176;F</p>
+                    <p >Humidity: <span id="curent-humidity">Test</span>%</p>
+                    <p>Wind Speed: <span id="current-wind">test</span>MPH</p>
+                    <p>Uv Index: <span id="Current-uv" class="bg-primary">test</span></p>
+                </div>
+            <div>
+                <h4>Five day Forecast</h4>
+            </div>
+                <div class="row ">
+                    <!--first day-->
+                    <div class="card mr-5 mt-5 bg-primary border border-dark">
+                        <div id="forecast-date-0" class="card-header">
+                        first day
+                    </div>
+                    <div class="text-center">
+                    <span id=weather-icon-0 class="oi oi-sun"></span>
+                    </div>
+                    <div class="text-center">
+                        Temp:<span id="forecast-temp-low-0">test</span>,<span id="forecast-temp-high-0">test</span>&#176;F
+                    </div>
+                    <div class="text-center">
+                        Humidity:<span id="forecat-humidity-0">test</span>
+                    </div>   
+                </div>
+                <!--second day-->
+                <div class="card mx-5 mt-5 bg-primary border border-dark">
+                    <div id="forecast-date-1" class="card-header">
+                    second day
+                </div>
+                <div class="text-center">
+                <span id=weather-icon-1 class="oi oi-sun"></span>
+                </div>
+                <div class="text-center">
+                    Temp:<span id="forecast-temp-low-1">test</span>,<span id="forecast-temp-high-1">test</span>&#176;F
+                </div>
+                <div class="text-center">
+                    Humidity:<span id="forecat-humidity-1">test</span>
+                </div>   
+            </div>
+            <!--third day-->
+            <div class="card mx-5 mt-5 bg-primary border border-dark">
+                <div id="forecast-date-2" class="card-header">
+                third day
+            </div>
+            <div class="text-center">
+            <span id=weather-icon-2 class="oi oi-sun"></span>
+            </div>
+            <div class="text-center">
+                Temp:<span id="forecast-temp-low-2">test</span>,<span id="forecast-temp-high-2">test</span>&#176;F
+            </div>
+            <div class="text-center">
+                Humidity:<span id="forecat-humidity-2">test</span>
+            </div>   
+        </div>
+        <!--fourth day-->
+        <div class="card mx-5 mt-5 bg-primary border border-dark">
+            <div id="forecast-date-3" class="card-header">
+            fourth day
+        </div>
+        <div class="text-center">
+        <span id=weather-icon-3 class="oi oi-sun"></span>
+        </div>
+        <div class="text-center">
+            Temp:<span id="forecast-temp-low-3">test</span>,<span id="forecast-temp-high-3">test</span>&#176;F
+        </div>
+        <div class="text-center">
+            Humidity:<span id="forecat-humidity-3">test</span>
+        </div>   
+    </div>
+    <!--fifth day-->
+    <div class="card mx-5 mt-5 bg-primary border border-dark">
+        <div id="forecast-date-4" class="card-header">
+        Fifth day
+    </div>
+    <div class="text-center">
+    <span id=weather-icon-4 class="oi oi-sun"></span>
+    </div>
+    <div class="text-center">
+        Temp:<span id="forecast-temp-low-4">test</span>,<span id="forecast-temp-high-4">test</span>&#176;F
+    </div>
+    <div class="text-center">
+        Humidity:<span id="forecat-humidity-4">test</span>
+    </div>   
+</div>
             </div>
             <footer class="row bg-dark text-white text-xl-center w-100 fixed-bottom">
-                <P>hello world!</P>
+                <P>Made by Andrew Zambik.</P>
             </footer>
         </div>
 
