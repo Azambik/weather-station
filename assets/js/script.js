@@ -81,9 +81,9 @@ var loadPastSearch = function() {
 };  
 //getting weather and populating current weather fields
 var getWeather = function(citySearched, apiKey){
-    var apiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + citySearched + "&units=imperial&appid=" + apiKey;
+    var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + citySearched + "&units=imperial&appid=" + apiKey;
 
-    var apiUrl2 = "http://api.openweathermap.org/data/2.5/forecast?q=" + citySearched + "&cnt=6&units=imperial&appid=" + apiKey;
+    var apiUrl2 = "https://api.openweathermap.org/data/2.5/forecast?q=" + citySearched + "&cnt=6&units=imperial&appid=" + apiKey;
     
     fetch(apiUrl).then(function(response){
     return response.json();
