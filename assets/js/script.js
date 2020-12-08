@@ -93,7 +93,7 @@ var getWeather = function(citySearched, apiKey){
       currentWindEl.textContent = data.wind.speed;
       currentWeatherIconEl.setAttribute("src","http://openweathermap.org/img/wn/"+ data.weather[0].icon + "@2x.png" )
 
-      var uvIndex = "http://api.openweathermap.org/data/2.5/uvi?lat=" + data.coord.lat + "&lon=" + data.coord.lon + "&appid=" + apiKey;
+      var uvIndex = "https://api.openweathermap.org/data/2.5/uvi?lat=" + data.coord.lat + "&lon=" + data.coord.lon + "&appid=" + apiKey;
 
       fetch(uvIndex).then(function(response){
         if (response.ok){
